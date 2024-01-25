@@ -19,8 +19,8 @@ export const Header = () => {
 	const [isSidebarVisible, setIsSidebarVisible] = useState<boolean>();
 	const { publication } = useAppContext();
 	const navbarItems = publication.preferences.navbarItems.filter(hasUrl);
-	const visibleItems = navbarItems.slice(0, 3);
-	const hiddenItems = navbarItems.slice(3);
+	const visibleItems = navbarItems.slice(0, 6);
+	const hiddenItems = navbarItems.slice(6);
 
 	const toggleSidebar = () => {
 		setIsSidebarVisible((prevVisibility) => !prevVisibility);
@@ -32,7 +32,6 @@ export const Header = () => {
 				<li key={item.url}>
 					<a
 						href={item.url}
-						target="_blank"
 						rel="noopener noreferrer"
 						className="transition-200 block max-w-[200px] truncate text-ellipsis whitespace-nowrap rounded-full p-2 transition-colors hover:bg-white hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white"
 					>
