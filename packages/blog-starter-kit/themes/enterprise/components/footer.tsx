@@ -30,29 +30,30 @@ export const Footer = () => {
 							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">
 								Stay in touch
 							</p>
-							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
-								<li>
+              <ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
+                <li>
+                  <Link id="link" href="/contact">Home</Link>.
                   <Link href="/contact">
                     <a className="hover:underline">Contact Me!</a>
                   </Link>
-								</li>
-								<li>
+                </li>
+                <li>
                   <Link href="/newsletter">
                     <a className="hover:underline">Newsletter</a>
                   </Link>
-								</li>
-								<li>
+                </li>
+                <li>
                   <Link href="/sponsor">
                     <a className="hover:underline">Sponsor</a>
                   </Link>
-								</li>
+                </li>
                 <li>
                   <Link href="/home">
                     <a className="hover:underline">My Self</a>
                   </Link>
                 </li>
-							</ul>
-						</div>
+              </ul>
+            </div>
 					</div>
 					<div className="col-span-2 flex flex-col items-end gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left">
 						<SocialLinks />
