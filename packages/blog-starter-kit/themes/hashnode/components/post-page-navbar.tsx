@@ -70,15 +70,6 @@ const PostPageNavbar = forwardRef<HTMLElement, Props>((props, ref) => {
 						<PublicationLogo publication={publication} size="sm" withProfileImage isPostPage />
 					</div>
 				</div>
-
-				<div
-					className={twJoin(
-						'flex flex-row items-center','dark:text-white',
-					)}
-				>
-					<HeaderBlogSearch publication={publication} />
-					<Button as="a" href="#" type="primary" label="Sign up" />
-				</div>
 			</div>
 
 			{/* Logo for mobile view */}
