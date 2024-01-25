@@ -37,14 +37,14 @@ export const Footer = () => {
 									</a>
 								</li>
 								<li>
-									<link href="/newsletter" className="hover:underline">
+									<a href="#newsletter" className="hover:underline">
 										Newsletter
-									</link>
+									</a>
 								</li>
 								<li>
-									<link href="/sponsor" className="hover:underline">
+									<a href="#sponsor" className="hover:underline">
 										Sponsor
-									</link>
+									</a>
 								</li>
 							</ul>
 						</div>
